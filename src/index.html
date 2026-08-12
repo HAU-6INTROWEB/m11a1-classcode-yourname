@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Curbside Thai - Place an Order</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- TODO: link your script.js here, and remember defer -->
+</head>
+<body>
+  <main class="card">
+    <p class="eyebrow">Curbside Thai</p>
+    <h1>Place an Order</h1>
+
+    <!--
+      These are type="text" on purpose. type="number" would let the browser
+      block some bad input before your code ever sees it, and this activity is
+      about handling it yourself.
+    -->
+    <div class="field">
+      <label for="price">Price</label>
+      <input type="text" id="price" value="180">
+    </div>
+
+    <div class="field">
+      <label for="qty">Quantity</label>
+      <input type="text" id="qty" value="1">
+    </div>
+
+    <p class="total">Total: <span id="total">--</span></p>
+
+    <!-- Leave this empty. Your code fills it in only when something is wrong,
+         and clears it again when the input is valid. -->
+    <p class="error" id="error"></p>
+
+    <p class="footnote">Try an empty box, then the word "three", then -5.</p>
+  </main>
+</body>
+</html>
